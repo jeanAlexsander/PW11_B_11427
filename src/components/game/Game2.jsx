@@ -123,11 +123,14 @@ function Game2() {
         </div>
       </form>
 
+
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-4">
-        {todoList.map((item, index) => (
-          <ToDoItem key={index} item={item} />
-        ))}
+      {todoList.map((item, index) => (
+      <div className="col">
+      <ToDoItem key={index} item={item} />
       </div>
+      ))}
+    </div>
     </div>
   );
 }
